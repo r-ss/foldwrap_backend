@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Logs
+logs/
+*.log
+
+
+# Garbage files
+.DS_Store
+
+.vscode
+.idea
+.DS_Store
+
+# Project's dir for uploads
+mount/
+
+# DB dump(s)
+dump/
+
+# temp zzz-ombie files
+zzz_*
+
+# ruff linter cache folder
+.ruff_cache
+
+
+
+
+# Dependency directory
+node_modules
+
+build
+dist
+
+bun.lockb
+pnpm-lock.yaml
+
+playwright-report
+test-results
+

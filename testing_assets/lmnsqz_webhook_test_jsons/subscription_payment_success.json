@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "test_mode": true,
+    "event_name": "subscription_payment_success"
+  },
+  "data": {
+    "type": "subscription-invoices",
+    "id": "374717",
+    "attributes": {
+      "store_id": 50172,
+      "subscription_id": 173801,
+      "customer_id": 1544474,
+      "user_name": "Matthew Bellamy",
+      "user_email": "alice@foldwrap.com",
+      "billing_reason": "initial",
+      "card_brand": null,
+      "card_last_four": null,
+      "currency": "EUR",
+      "currency_rate": "1.06270100",
+      "status": "paid",
+      "status_formatted": "Paid",
+      "refunded": false,
+      "refunded_at": null,
+      "subtotal": 0,
+      "discount_total": 0,
+      "tax": 0,
+      "total": 0,
+      "subtotal_usd": 0,
+      "discount_total_usd": 0,
+      "tax_usd": 0,
+      "total_usd": 0,
+      "subtotal_formatted": "\\u20ac0.00",
+      "discount_total_formatted": "\\u20ac0.00",
+      "tax_formatted": "\\u20ac0.00",
+      "total_formatted": "\\u20ac0.00",
+      "urls": {
+        "invoice_url": "https://app.lemonsqueezy.com/my-orders/7d75eea7-8ec0-4de7-8ccd-d9ba642494ee/subscription-invoice/374717?signature=fa3b4ec53b48537a2932fbda75a9eed6b7892c6af34fd773c87b01a872337f4b"
+      },
+      "created_at": "2023-11-03T09:31:07.000000Z",
+      "updated_at": "2023-11-03T09:31:07.000000Z",
+      "test_mode": true
+    },
+    "relationships": {
+      "store": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717/store",
+          "self": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717/relationships/store"
+        }
+      },
+      "subscription": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717/subscription",
+          "self": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717/relationships/subscription"
+        }
+      },
+      "customer": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717/customer",
+          "self": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717/relationships/customer"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.lemonsqueezy.com/v1/subscription-invoices/374717"
+    }
+  }
+}

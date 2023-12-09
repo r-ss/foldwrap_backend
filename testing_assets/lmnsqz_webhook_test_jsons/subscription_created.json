@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "test_mode": true,
+    "event_name": "subscription_created"
+  },
+  "data": {
+    "type": "subscriptions",
+    "id": "173801",
+    "attributes": {
+      "store_id": 50172,
+      "customer_id": 1544474,
+      "order_id": 1519824,
+      "order_item_id": 1482792,
+      "product_id": 125081,
+      "variant_id": 144807,
+      "product_name": "Foldwrap Pro",
+      "variant_name": "Default",
+      "user_name": "Matthew Bellamy",
+      "user_email": "alice@foldwrap.com",
+      "status": "on_trial",
+      "status_formatted": "On Trial",
+      "card_brand": null,
+      "card_last_four": null,
+      "pause": null,
+      "cancelled": false,
+      "trial_ends_at": "2023-11-10T09:31:05.000000Z",
+      "billing_anchor": 10,
+      "first_subscription_item": {
+        "id": 136427,
+        "subscription_id": 173801,
+        "price_id": 138559,
+        "quantity": 1,
+        "is_usage_based": false,
+        "created_at": "2023-11-03T09:31:06.000000Z",
+        "updated_at": "2023-11-03T09:31:06.000000Z"
+      },
+      "urls": {
+        "update_payment_method": "https://foldwrap.lemonsqueezy.com/subscription/173801/payment-details?expires=1699090267&signature=fdecd044d3ab4fa1fb3753d01df75c500c73afdc213fa5dad6bb447582058bdd",
+        "customer_portal": "https://foldwrap.lemonsqueezy.com/billing?expires=1699025467&user=1520465&signature=945b3b7f7376bb74830031a20cf56dae544eda3e75ee02fa20d4c359acab89a7"
+      },
+      "renews_at": "2023-11-10T09:31:05.000000Z",
+      "ends_at": null,
+      "created_at": "2023-11-03T09:31:06.000000Z",
+      "updated_at": "2023-11-03T09:31:07.000000Z",
+      "test_mode": true
+    },
+    "relationships": {
+      "store": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/store",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/store"
+        }
+      },
+      "customer": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/customer",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/customer"
+        }
+      },
+      "order": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/order",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/order"
+        }
+      },
+      "order-item": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/order-item",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/order-item"
+        }
+      },
+      "product": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/product",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/product"
+        }
+      },
+      "variant": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/variant",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/variant"
+        }
+      },
+      "subscription-items": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/subscription-items",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/subscription-items"
+        }
+      },
+      "subscription-invoices": {
+        "links": {
+          "related": "https://api.lemonsqueezy.com/v1/subscriptions/173801/subscription-invoices",
+          "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801/relationships/subscription-invoices"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.lemonsqueezy.com/v1/subscriptions/173801"
+    }
+  }
+}
