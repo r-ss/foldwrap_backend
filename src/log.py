@@ -11,15 +11,20 @@ Loguru for console and simple file logging
 + scructlog for JSON logging, than sucked to Grafana
 """
 
-logger.remove(0)
+logger.remove(0)  # removing default loguru logger and replace it with a better formatted variant
 logger.add(sys.stderr, level=config.LOG_LEVEL, format="<level>{message}</level>", colorize=True)
-# logger.add(
-#     config.LOG_FILE_PATH,
-#     level="DEBUG",
-#     rotation="1 MB",
-#     retention="10 days",
-#     format="{time:YYYY-MM-DD at HH:mm:ss} {level} {message}",
-# )
+
+"""
+Optional loguru file logger with rotation can be added with following code:
+
+logger.add(
+    config.LOG_FILE_PATH,
+    level="DEBUG",
+    rotation="1 MB",
+    retention="10 days",
+    format="{time:YYYY-MM-DD at HH:mm:ss} {level} {message}",
+)
+"""
 
 # Configure the logger for writing JSON logs to a file
 structlog.configure(
@@ -37,6 +42,9 @@ file_logger = structlog.get_logger()
 def log(message: str, level: str = "info", **kwars) -> None:
     """Main application-wide logging function
     Can accept a single string or a dictionary of additional data
+
+    Then it sends it to both console and file loggers
+
     """
     match level.lower():
         case "debug":
